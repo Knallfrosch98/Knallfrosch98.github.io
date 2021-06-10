@@ -6,9 +6,92 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
+  overflow: hidden;
 }
 
 #output {
   padding: 20px;
   text-align: center;
+}
+
+#level {
+  display: none;
+}
+
+#field {
+  width: 200px;
+  height: 250px;
+
+  border: 1px solid black;
+  
+  position: relative;
+
+  display: grid;
+  grid-template-rows: repeat(auto-fit, 50px);
+  grid-template-columns: repeat(auto-fit, 50px);
+}
+#camera {
+  width: 50%;
+  height: 50%;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+  margin-top: 10%;
+  border: 2px solid black;
+}
+
+
+#levelOverview {
+  display: none;
+}
+
+.astronaut {
+  width: 50px;
+  height: 50px;
+
+  background-image: url("resources/assets/Astronaut.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center center;
+  position: absolute;
+}
+
+.wall {
+  background-image: url("resources/assets/wall.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center center;
+}
+
+.goal_unlocked {
+  background-image: url("resources/assets/ziel_open.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center center;
+}
+
+.goal_locked {
+  background-image: url("resources/assets/ziel_locked.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center center;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+
+  background-image: url("resources/background/background.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center center;
+}
+
+.menuButton {
+  
 }

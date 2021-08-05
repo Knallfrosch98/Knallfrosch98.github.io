@@ -28,7 +28,6 @@ html, body {
     overflow: hidden;
     position: relative;
     margin: auto;
-    margin-top: 10%;
     border: 2px solid black;
     background-color: black;
     justify-items: center;
@@ -63,7 +62,7 @@ html, body {
 
 .levelBackground {
     background-image: url("resources/background/background.png");
-    background-repeat: no-repeat;
+    background-repeat: repeat;
 }
 
 .astronaut {
@@ -120,6 +119,15 @@ html, body {
   width: 100%;
 }
 
+.key {
+  background-image: url("resources/assets/Key.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center center;
+
+  position: absolute;
+}
+
 .menuButton {
   font-size: 23px;
   text-transform: uppercase;
@@ -127,7 +135,9 @@ html, body {
   background-color: #414141;
   color: white;
   border: none;
-  padding: 0, 5em, 0, 5em;
+  border-radius: 28px;
+  gap:20px;
+  padding: 0 2px 0 2px;
   width: 20%;
   min-width: 106px;
   height: 2em;
@@ -149,24 +159,27 @@ html, body {
 
 .fadeout {
     animation-name: fadetotransparent;
-    animation-duration: 1s;
+    animation-duration: 0.8s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    animation-timing-function: ease;
 }
 
 .halffadeout {
     animation-name: halffadetotransparent;
-    animation-duration: 1s;
+    animation-duration: 0.8s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    animation-timing-function: ease;
 }
 
 
 .fadein {
     animation-name: fadetoblack;
-    animation-duration: 1s;
+    animation-duration: 0.8s;
     animation-iteration-count: 1;
-    animation-fill-mode: forwards
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
 }
 
 @keyframes fadetotransparent {
@@ -203,7 +216,7 @@ html, body {
     background-color: #000000;
     color: white;
     border: none;
-    padding: 0, 5em, 0, 5em;
+    padding: 0 2px 0 2px;
 
 }
 

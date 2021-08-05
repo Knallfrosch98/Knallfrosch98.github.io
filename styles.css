@@ -238,7 +238,7 @@ html, body {
     white-space: pre-line;
 }
 
-#levelOverlay {
+.Overlay {
     display: none;
     grid-template-columns: 50px 50px 50px;
     background-color: white;
@@ -246,7 +246,7 @@ html, body {
     border-left: 1px solid black;
 }
 
-#levelOverlay > div {
+.Overlay > div {
     text-align: center;
     border-top: 1px solid black;
     border-right: 1px solid black;

@@ -242,9 +242,6 @@ html, body {
     display: none;
     grid-template-columns: 50px 50px 50px;
     background-color: white;
-    border: 1px solid #000;
-	grid-gap: 1px;
-	justify-self: center; 
-	height: auto;
-	margin: 0 auto;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
 }

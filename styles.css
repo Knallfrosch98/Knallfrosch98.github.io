@@ -237,3 +237,9 @@ html, body {
 .lineBreak {
     white-space: pre-line;
 }
+
+#levelOverlay {
+    display: none;
+    grid-template-columns: 50px 50px 50px;
+    background-color: white;
+}

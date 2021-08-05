@@ -1,0 +1,246 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+
+}
+
+#output {
+    padding: 20px;
+    text-align: center;
+}
+
+#level {
+    display: none;
+    background-image: url("resources/background/background.png");
+    background-repeat: no-repeat;
+}
+
+#camera {
+    display: none;
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    border: 2px solid black;
+    background-color: black;
+    justify-items: center;
+    align-items: center;
+}
+
+#viewfield {
+    z-index: 5;
+}
+
+.gridfield {
+    position: absolute;
+    display: grid;
+}
+
+#background {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    background-image: url("resources/background/background.png");
+    background-repeat: no-repeat;
+}
+
+#levelOverview {
+    display: none;
+}
+
+.levelBackground {
+    background-image: url("resources/background/background.png");
+    background-repeat: repeat;
+}
+
+.astronaut {
+    width: 50px;
+    height: 50px;
+
+    background-image: url("resources/assets/Astronaut.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+    position: absolute;
+}
+
+.wall {
+    background-image: url("resources/assets/wall.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+}
+
+.path {
+    background-color: white;
+}
+
+.abyss {
+    visibility: hidden;
+}
+
+.goal_unlocked {
+    background-image: url("resources/assets/ziel_open.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+    background-color: white;
+}
+
+.goal_locked {
+    background-image: url("resources/assets/ziel_locked.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+    background-color: white;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.key {
+  background-image: url("resources/assets/Key.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center center;
+
+  position: absolute;
+}
+
+.menuButton {
+  font-size: 23px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #414141;
+  color: white;
+  border: none;
+  border-radius: 28px;
+  gap:20px;
+  padding: 0 2px 0 2px;
+  width: 20%;
+  min-width: 106px;
+  height: 2em;
+}
+
+#finished button {
+  width: 95% !important;
+}
+
+.viewblock {
+    background-color: black;
+    opacity: 1;
+}
+
+.discoveredview {
+    background-color: black;
+    opacity: 0.5;
+}
+
+.fadeout {
+    animation-name: fadetotransparent;
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+.halffadeout {
+    animation-name: halffadetotransparent;
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+
+.fadein {
+    animation-name: fadetoblack;
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes fadetotransparent {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes halffadetotransparent {
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadetoblack {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.5;
+    }
+}
+
+#iosButton {
+    display: none;
+    font-size: 23px;
+    text-transform: uppercase;
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 0 2px 0 2px;
+
+}
+
+#finished {
+    display: none;
+    z-index: 6;
+    background-color: white;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 50%;
+    position: absolute;
+    padding: 5px;
+    gap: 10px;
+}
+
+.lineBreak {
+    white-space: pre-line;
+}
+
+#levelOverlay {
+    display: none;
+    grid-template-columns: 50px 50px 50px;
+    background-color: white;
+    border: 1px solid #000;
+}

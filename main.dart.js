@@ -4436,7 +4436,7 @@ s=s.style
 s.toString
 C.d.a5(s,C.d.a2(s,"flex-direction"),"column","")
 s=b.ch.style
-s.display="grid"
+s.display="inline-grid"
 s=b.d
 r=J.aE(s)
 r.gH(s).R(0)

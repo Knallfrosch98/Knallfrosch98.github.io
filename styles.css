@@ -272,7 +272,6 @@ html, body {
     width: 50%;
     grid-template-columns: auto auto auto;
     background-color: white;
-    border-bottom: 1px solid black;
     border-left: 1px solid black;
     margin: auto auto 0;
 }

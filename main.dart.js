@@ -4628,7 +4628,7 @@ r=s.style
 r.width=a2
 s=s.style
 s.toString
-C.d.X(s,C.d.V(s,a3),"33.333333333333336% 33.333333333333336% 33.333333333333336%","")}else{r=s.style
+C.d.X(s,C.d.V(s,a3),"33.333333333333336 % 33.333333333333336 % 33.333333333333336 %","")}else{r=s.style
 r.height="50%"
 s=s.style
 s.width="50%"

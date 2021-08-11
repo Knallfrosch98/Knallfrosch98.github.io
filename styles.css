@@ -107,6 +107,21 @@ html, body {
     background-color: white;
 }
 
+.laserfield {
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+    background-color: white;
+}
+
+.lf-b {
+    background-image: url("resources/assets/laserfield/Laserfield_Bottom.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+    background-color: white;  
+}
+
 .menu {
   display: flex;
   flex-direction: column;
@@ -118,6 +133,15 @@ html, body {
   height: 100%;
   width: 100%;
 }
+
+.life {
+    background-image: url("resources/assets/Astronaut.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+  
+    position: absolute;
+  }
 
 .key {
   background-image: url("resources/assets/Key.svg");

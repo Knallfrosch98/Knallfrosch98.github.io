@@ -4610,7 +4610,7 @@ n.id=m
 C.n.saz(n,m)
 p.gH(l).p(0,n)}return P.z(null,r)}})
 return P.A($async$aD,r)},
-aC:function(){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1=this
+aC:function(){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1=this,a2="100%"
 a1.sbe(P.dO(t.m))
 s=a1.r.style
 s.display="none"
@@ -4618,7 +4618,18 @@ s=a1.cx.style
 s.display="none"
 s=a1.cy.style
 s.display="flex"
-s=a1.d
+s=a1.e
+if(a1.fr){r=s.style
+r.height=a2
+s=s.style
+s.width=a2
+s=a1.z.style
+s.width=a2}else{r=s.style
+r.height="50%"
+s=s.style
+s.width="50%"
+s=a1.z.style
+s.width="50%"}s=a1.d
 r=J.as(s)
 r.gH(s).W(0)
 q=a1.x

@@ -81,6 +81,7 @@ html, body {
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center center;
+    z-index: 1;
 }
 
 .path {
@@ -148,9 +149,18 @@ html, body {
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center center;
-
   position: absolute;
 }
+
+.runner {
+    background-image: url("resources/assets/monster_runner.svg");
+    /* background-color: red; */
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+    position: absolute;
+ }
 
 .menuButton {
   font-size: 23px;
@@ -257,6 +267,22 @@ html, body {
     padding: 5px;
     gap: 10px;
 }
+
+.Overlay {
+    display: none;
+    grid-template-columns: 50px 50px 50px;
+    max-width: auto;
+    background-color: white;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.Overlay > div {
+    text-align: center;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+}
+
 
 .lineBreak {
     white-space: pre-line;

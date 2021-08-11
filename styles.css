@@ -270,7 +270,6 @@ html, body {
 .Overlay {
     display: inline-grid;
     width: 50%;
-    grid-template-columns: auto auto auto;
     background-color: white;
     border-left: 1px solid black;
     margin: auto auto 0;

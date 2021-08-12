@@ -2107,7 +2107,7 @@ i=s.querySelector("#timer")
 h=s.querySelector("#finishedText")
 g=s.querySelector("#finished")
 f=s.querySelector("#level")
-s=s.querySelector("#livenumber")
+s=s.querySelector("#numberOfLives")
 e=new O.ee(r,q,p,o,n,m,l,k,j,i,h,g,f,s,J.de(window.navigator.userAgent,"iPhone")||J.de(window.navigator.userAgent,"iPad")||J.de(window.navigator.userAgent,"Android"))
 e.a=d
 e.sbg(P.dU(t.m))

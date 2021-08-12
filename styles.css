@@ -302,7 +302,7 @@ html, body {
     height: 100%;
 }
 
-#lifePicture {
+.lifePicture {
     background-image: url("resources/assets/extralife.svg");
     background-size: 20px 20px;
     background-repeat: no-repeat;

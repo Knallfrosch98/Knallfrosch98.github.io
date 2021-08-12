@@ -306,9 +306,11 @@ html, body {
     background-image: url("resources/assets/extralife.svg");
     background-size: 20px 20px;
     background-repeat: no-repeat;
+    background-position: center center;
 }
 
 #lives {
     display: grid;
-    grid-template-columns: fit-content(100%) fit-content(100%)
+    grid-template-columns: 20px fit-content(100%);
+    justify-content: center;
 }

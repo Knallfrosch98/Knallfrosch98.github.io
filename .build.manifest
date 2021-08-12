@@ -39,6 +39,7 @@ packages/pedantic/analysis_options.yaml
 resources/assets/Astronaut.png
 resources/assets/Astronaut.svg
 resources/assets/Key.svg
+resources/assets/extralife.svg
 resources/assets/laserfield/Laserfield_All.svg
 resources/assets/laserfield/Laserfield_Bottom.svg
 resources/assets/laserfield/Laserfield_Bottom_Left.svg
@@ -54,6 +55,7 @@ resources/assets/laserfield/Laserfield_Top_Left_Bottom.svg
 resources/assets/laserfield/Laserfield_Top_Left_Right.svg
 resources/assets/laserfield/Laserfield_Top_Right.svg
 resources/assets/laserfield/Laserfield_Top_Right_Bottom.svg
+resources/assets/monster_patroler.svg
 resources/assets/monster_runner.svg
 resources/assets/wall.svg
 resources/assets/ziel_locked.svg

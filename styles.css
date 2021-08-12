@@ -135,7 +135,7 @@ html, body {
 }
 
 .life {
-    background-image: url("resources/assets/Astronaut.svg");
+    background-image: url("resources/assets/extralife.svg");
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center center;
@@ -153,6 +153,16 @@ html, body {
 
 .runner {
     background-image: url("resources/assets/monster_runner.svg");
+    /* background-color: red; */
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+    position: absolute;
+ }
+
+.patroler {
+    background-image: url("resources/assets/monster_patroler.svg");
     /* background-color: red; */
     border-radius: 100%;
     background-repeat: no-repeat;
@@ -290,4 +300,8 @@ html, body {
 .level {
     width: 100%;
     height: 100%;
+}
+
+#lifePicture {
+    background-image: url("resources/assets/extralife.svg");
 }

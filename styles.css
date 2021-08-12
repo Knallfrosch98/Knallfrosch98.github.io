@@ -305,3 +305,8 @@ html, body {
 #lifePicture {
     background-image: url("resources/assets/extralife.svg");
 }
+
+#lives {
+    display: flex;
+    flex-direction: column;
+}

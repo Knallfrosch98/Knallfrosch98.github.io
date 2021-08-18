@@ -5248,9 +5248,7 @@ r.height=a5
 s=s.style
 s.width=a5
 s=a3.z.style
-s.width=a5
-s=document.querySelector(".menuButton").style
-s.fontSize="16px"}else{r=s.style
+s.width=a5}else{r=s.style
 r.height="50%"
 s=s.style
 s.width="50%"
@@ -5459,28 +5457,42 @@ if((o&&C.a).q(o,p))return"Right"
 return"resources/assets/wall.svg"},
 aJ:function(){var s=0,r=P.A(t.H),q,p=this,o,n,m,l,k
 var $async$aJ=P.B(function(a,b){if(a===1)return P.x(b,r)
-while(true)switch(s){case 0:k=p.a.d
-if(k.r||k.x){k=k.c
-if(typeof k!=="number"){q=k.ds()
+while(true)switch(s){case 0:if(p.fx){o=document
+n=o.querySelector("#Again").style
+n.fontSize="16px"
+n=o.querySelector("#Next").style
+n.fontSize="16px"
+n=o.querySelector("#backToMenuButton").style
+n.fontSize="16px"
+n=o.querySelector("#Continue").style
+n.fontSize="16px"
+n=o.querySelector("#LevelOverviewButton").style
+n.fontSize="16px"
+n=o.querySelector("#BackToMenuButton2").style
+n.fontSize="16px"
+o=o.querySelector("#pauseButton").style
+o.fontSize="16px"}o=p.a.d
+if(o.r||o.x){o=o.c
+if(typeof o!=="number"){q=o.ds()
 s=1
-break}o=C.b.j(k/1000)
-k=p.a
-n=k.d
-m=n.r
-l=m?"Du hast verloren.\n":"Du hast gewonnen.\n"
-l+="Du hast "+o+" Sekunden gebraucht."
-if(n.a===k.b.length||m){k=document.querySelector("#Next").style
-k.display="none"}else{k=document.querySelector("#Next").style
-k.display="inline"}J.hc(p.ch,l)
-k=p.cx.style
-k.display="flex"
+break}m=C.b.j(o/1000)
+o=p.a
+n=o.d
+l=n.r
+k=l?"Du hast verloren.\n":"Du hast gewonnen.\n"
+k+="Du hast "+m+" Sekunden gebraucht."
+if(n.a===o.b.length||l){o=document.querySelector("#Next").style
+o.display="none"}else{o=document.querySelector("#Next").style
+o.display="inline"}J.hc(p.ch,k)
+o=p.cx.style
+o.display="flex"
 p.bX()}else{p.dq()
 p.bU()
 p.bX()
 J.hc(p.db,C.d.j(p.a.d.Q.Q))
-k=p.a.d.ch.Q
+o=p.a.d.ch.Q
 n=p.dy
-if(k)n.className="goal_locked"
+if(o)n.className="goal_locked"
 else n.className="goal_unlocked"
 p.dn()}case 1:return P.y(q,r)}})
 return P.z($async$aJ,r)},

@@ -5248,7 +5248,9 @@ r.height=a5
 s=s.style
 s.width=a5
 s=a3.z.style
-s.width=a5}else{r=s.style
+s.width=a5
+s=document.querySelector(".menuButton").style
+s.fontSize="16px"}else{r=s.style
 r.height="50%"
 s=s.style
 s.width="50%"
@@ -5469,21 +5471,7 @@ l=m?"Du hast verloren.\n":"Du hast gewonnen.\n"
 l+="Du hast "+o+" Sekunden gebraucht."
 if(n.a===k.b.length||m){k=document.querySelector("#Next").style
 k.display="none"}else{k=document.querySelector("#Next").style
-k.display="inline"}if(p.fx){k=document
-n=k.querySelector("#Again").style
-n.fontSize="16px"
-n=k.querySelector("#Next").style
-n.fontSize="16px"
-n=k.querySelector("#backToMenuButton").style
-n.fontSize="16px"
-n=k.querySelector("#Continue").style
-n.fontSize="16px"
-n=k.querySelector("#LevelOverviewButton").style
-n.fontSize="16px"
-n=k.querySelector("#BackToMenuButton2").style
-n.fontSize="16px"
-k=k.querySelector("#pauseButton").style
-k.fontSize="16px"}J.hc(p.ch,l)
+k.display="inline"}J.hc(p.ch,l)
 k=p.cx.style
 k.display="flex"
 p.bX()}else{p.dq()

@@ -75,14 +75,6 @@ html, body {
     position: absolute;
 }
 
-.wall {
-    background-image: url("resources/assets/wall.svg");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: center center;
-    z-index: 1;
-}
-
 .path {
     background-color: white;
 }
@@ -107,7 +99,7 @@ html, body {
     background-color: white;
 }
 
-.laserfield {
+.gridentity {
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center center;
@@ -189,6 +181,10 @@ html, body {
 #finished button {
   width: 95% !important;
 }
+
+#pauseMenu button {
+    width: 95% !important;
+  }
 
 .viewblock {
     background-color: black;
@@ -277,6 +273,20 @@ html, body {
     gap: 10px;
 }
 
+#pauseMenu {
+    display: none;
+    z-index: 6;
+    background-color: white;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 50%;
+    position: absolute;
+    padding: 5px;
+    gap: 10px;
+}
+
 .Overlay {
     display: inline-grid;
     width: 50%;
@@ -292,7 +302,7 @@ html, body {
     border-top: 1px solid black;
     border-right: 1px solid black;
     font-size: 23px;
-    height: 50px;
+    height: 55px;
     align-items: center;
 }
 

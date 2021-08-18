@@ -39,6 +39,14 @@ packages/pedantic/analysis_options.yaml
 resources/assets/Astronaut.png
 resources/assets/Astronaut.svg
 resources/assets/Key.svg
+resources/assets/airstream/Airstream_Bottom.svg
+resources/assets/airstream/Airstream_Left.svg
+resources/assets/airstream/Airstream_Right.svg
+resources/assets/airstream/Airstream_Top.svg
+resources/assets/airstream/Airvent_Bottom.svg
+resources/assets/airstream/Airvent_Left.svg
+resources/assets/airstream/Airvent_Right.svg
+resources/assets/airstream/Airvent_Top.svg
 resources/assets/extralife.svg
 resources/assets/laserfield/Laserfield_All.svg
 resources/assets/laserfield/Laserfield_Bottom.svg

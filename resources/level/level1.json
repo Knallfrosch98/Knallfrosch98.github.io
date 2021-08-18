@@ -7,7 +7,7 @@
         ["Wall","Path", "Path", "Path", "Path","Path","Wall"],
         ["Wall","Path", "Path", "Path", "Path","Path","Wall"],
         ["Wall","Path", "Path", "Start", "Path","Path","Wall"],
-        ["Wall","Path", "Abyss", "Path", "Path","Path","Wall"],
+        ["Wall","Path", "Abyss", "Air-l-1", "Air-l-1","Air-l-1","Airvent-l"],
         ["Wall","Path", "Wall", "Path", "Path","Path","Wall"],
         ["Wall","Path", "Wall", "Path", "Path","Path","Wall"],
         ["Wall","Path", "Wall", "Path", "Path","Path","Wall"],

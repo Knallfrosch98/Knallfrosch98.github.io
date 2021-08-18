@@ -5469,7 +5469,20 @@ l=m?"Du hast verloren.\n":"Du hast gewonnen.\n"
 l+="Du hast "+o+" Sekunden gebraucht."
 if(n.a===k.b.length||m){k=document.querySelector("#Next").style
 k.display="none"}else{k=document.querySelector("#Next").style
-k.display="inline"}if(p.fx){k=document.querySelector(".menuButton").style
+k.display="inline"}if(p.fx){k=document
+n=k.querySelector("#Again").style
+n.fontSize="16px"
+n=k.querySelector("#Next").style
+n.fontSize="16px"
+n=k.querySelector("#backToMenuButton").style
+n.fontSize="16px"
+n=k.querySelector("#Continue").style
+n.fontSize="16px"
+n=k.querySelector("#LevelOverviewButton").style
+n.fontSize="16px"
+n=k.querySelector("#BackToMenuButton2").style
+n.fontSize="16px"
+k=k.querySelector("#pauseButton").style
 k.fontSize="16px"}J.hc(p.ch,l)
 k=p.cx.style
 k.display="flex"

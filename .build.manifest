@@ -38,6 +38,7 @@ packages/pedantic/analysis_options.1.9.0.yaml
 packages/pedantic/analysis_options.yaml
 resources/assets/Astronaut.png
 resources/assets/Astronaut.svg
+resources/assets/Invert_Control.svg
 resources/assets/Key.svg
 resources/assets/airstream/Airstream_Bottom.svg
 resources/assets/airstream/Airstream_Left.svg
@@ -47,7 +48,9 @@ resources/assets/airstream/Airvent_Bottom.svg
 resources/assets/airstream/Airvent_Left.svg
 resources/assets/airstream/Airvent_Right.svg
 resources/assets/airstream/Airvent_Top.svg
+resources/assets/bigger_viewfield.svg
 resources/assets/extralife.svg
+resources/assets/fast.svg
 resources/assets/laserfield/Laserfield_All.svg
 resources/assets/laserfield/Laserfield_Bottom.svg
 resources/assets/laserfield/Laserfield_Bottom_Left.svg
@@ -65,6 +68,8 @@ resources/assets/laserfield/Laserfield_Top_Right.svg
 resources/assets/laserfield/Laserfield_Top_Right_Bottom.svg
 resources/assets/monster_patroler.svg
 resources/assets/monster_runner.svg
+resources/assets/slow.svg
+resources/assets/smaller_viewfield.svg
 resources/assets/wall.svg
 resources/assets/ziel_locked.svg
 resources/assets/ziel_open.svg

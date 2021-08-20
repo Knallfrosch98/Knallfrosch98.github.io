@@ -19,7 +19,13 @@
     ],
     "Collectibles": {
         "Key":[{"x":1.5,"y":2.7}],
-        "Life":[{"x":3.5,"y":2.7},{"x":5.5,"y":2.7}]
+        "Life":[{"x":3.5,"y":2.7},{"x":5.5,"y":2.7}],
+        "Invert":[{"x":4.5,"y":6.7,"duration":10000},{"x":2.5,"y":2.7,"duration":10000}],
+        "Speed":[{"x": 4.5,"y":11.5,"duration":10000,"multiplier":5}],
+        "Visibility":[{"x": 3.5,"y":9.5,"duration":10000, "difference":2}]
+    },
+    "Traps": {
+        "Lasergate": [{"x": 1.0, "y":6.0, "endx": 2.0, "endy": 6.0, "on":2000, "off": 3000} ]
     },
     "Monster":{
         "Runner":[

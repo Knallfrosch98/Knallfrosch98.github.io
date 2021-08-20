@@ -106,12 +106,9 @@ html, body {
     background-color: white;
 }
 
-.lf-b {
-    background-image: url("resources/assets/laserfield/Laserfield_Bottom.svg");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: center center;
-    background-color: white;  
+.lasergate {
+    background-color: red;
+    position: absolute;
 }
 
 .menu {
@@ -142,6 +139,27 @@ html, body {
   background-position: center center;
   position: absolute;
 }
+
+.invert {
+    background-image: url("resources/assets/Invert_Control.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+    position: absolute;
+  }
+
+  .speed {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+  }
+  .visibility {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+  }
 
 .runner {
     background-image: url("resources/assets/monster_runner.svg");
@@ -325,4 +343,9 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;    
+}
+
+.powerUpsOverlay {
+    width: 50px;
+    height: 50px;
 }

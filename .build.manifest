@@ -2,6 +2,7 @@
 .packages
 favicon.ico
 index.html
+leveleditor.html
 main.dart.js
 packages/$sdk/_internal/ddc_sdk.sum
 packages/$sdk/_internal/strong.sum
@@ -40,6 +41,8 @@ resources/assets/Astronaut.png
 resources/assets/Astronaut.svg
 resources/assets/Invert_Control.svg
 resources/assets/Key.svg
+resources/assets/Lasergate_Horizontal.png
+resources/assets/Lasergate_Vertical.png
 resources/assets/airstream/Airstream_Bottom.svg
 resources/assets/airstream/Airstream_Left.svg
 resources/assets/airstream/Airstream_Right.svg
@@ -49,6 +52,7 @@ resources/assets/airstream/Airvent_Left.svg
 resources/assets/airstream/Airvent_Right.svg
 resources/assets/airstream/Airvent_Top.svg
 resources/assets/bigger_viewfield.svg
+resources/assets/delete.svg
 resources/assets/extralife.svg
 resources/assets/fast.svg
 resources/assets/laserfield/Laserfield_All.svg

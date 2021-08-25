@@ -75,6 +75,13 @@ html, body {
     position: absolute;
 }
 
+.wall {
+    background-image: url("resources/assets/wall.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+}
+
 .path {
     background-color: white;
 }
@@ -112,15 +119,15 @@ html, body {
 }
 
 .menu {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  height: 100%;
-  width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    width: 100%;
 }
 
 .life {
@@ -128,16 +135,16 @@ html, body {
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center center;
-  
+
     position: absolute;
-  }
+}
 
 .key {
-  background-image: url("resources/assets/Key.svg");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-position: center center;
-  position: absolute;
+    background-image: url("resources/assets/Key.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+    position: absolute;
 }
 
 .invert {
@@ -146,63 +153,68 @@ html, body {
     background-size: 100% auto;
     background-position: center center;
     position: absolute;
-  }
+}
 
-  .speed {
+.speed {
     position: absolute;
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center center;
-  }
-  .visibility {
+}
+
+.visibility {
     position: absolute;
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center center;
-  }
+}
 
 .runner {
     background-image: url("resources/assets/monster_runner.svg");
-    /* background-color: red; */
     border-radius: 100%;
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center center;
     position: absolute;
- }
+}
 
 .patroler {
     background-image: url("resources/assets/monster_patroler.svg");
-    /* background-color: red; */
     border-radius: 100%;
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center center;
     position: absolute;
- }
+}
 
 .menuButton {
-  font-size: 23px;
-  text-transform: uppercase;
-  text-align: center;
-  background-color: #414141;
-  color: white;
-  border: none;
-  border-radius: 28px;
-  gap:20px;
-  padding: 0 2px 0 2px;
-  width: 20%;
-  min-width: 106px;
-  height: 2em;
+    font-size: 23px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #414141;
+    color: white;
+    border: none;
+    border-radius: 28px;
+    gap: 20px;
+    padding: 0 2px 0 2px;
+    width: 20%;
+    min-width: 106px;
+    height: 2em;
+
+}
+
+.pointer{
+    cursor: pointer;
 }
 
 #finished button {
-  width: 95% !important;
+    width: 95% !important;
 }
 
 #pauseMenu button {
     width: 95% !important;
-  }
+    min-width: 240px;
+}
 
 .viewblock {
     background-color: black;
@@ -266,17 +278,6 @@ html, body {
     }
 }
 
-#iosButton {
-    display: none;
-    font-size: 23px;
-    text-transform: uppercase;
-    background-color: #000000;
-    color: white;
-    border: none;
-    padding: 0 2px 0 2px;
-
-}
-
 #finished {
     display: none;
     z-index: 6;
@@ -328,9 +329,146 @@ html, body {
     white-space: pre-line;
 }
 
+.editor {
+    display: block;
+    overflow: auto;
+}
+
+.levelEditor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.editorOverview{
+    max-width: 60%;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+.scrollable {
+    overflow: auto;
+    scroll-snap-type: both mandatory;
+}
+
+.levelEditorSections {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    place-content: center;
+}
+
+.maxSize{
+    height: 100%;
+    width: 100%;
+}
+
+.settingSection {
+    margin: 5px auto;
+    width: 100%;
+    max-width: 240px;
+}
+
+.sectionleft {
+    margin-left: auto;
+    margin-right: 5px;
+}
+
+.sectionright {
+    margin-left: 5px;
+    margin-right: auto;
+}
+
+.levelEditorLabels {
+    font-size: 23px;
+    background-color: #414141;
+    color: white;
+    border: none;
+    border-radius: 28px;
+    height: 2em;
+    width: 100%;
+    margin-left: 5px;
+    align-items: center;
+    padding: 0 2px 0 2px;
+}
+
+.editorInput {
+    width: 15%;
+    height: 75%;
+    border-radius: 10%;
+    border: 0;
+    text-align: center;
+    margin-top: 3px;
+    margin-left: 3px;
+}
+
+.editorSection {
+    overflow: auto;
+    width: calc(50% - 15px);
+    max-height: 350px;
+    margin: 5px 5px 5px 10px;
+    display: grid;
+}
+
+.editorDeleteLabel{
+    align-self: center;
+    margin-left: 5px;
+}
+
+.levelEditorLevel {
+    display: grid;
+    justify-self: end;
+}
+
+
+.levelEditorLevelJson {
+    background-color: lightgray;
+    overflow: auto;
+    z-index: 2;
+    position: absolute;
+    display: none;
+    max-width: calc(50% - 15px);
+    max-height: 350px;
+}
+
+.levelEditorPlaceableGrid {
+    display: none;
+    max-width: 90%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #12094d;
+}
+
+.levelEditorGrid {
+    background-color: lightgray;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+    scroll-snap-align: start;
+}
+
+.levelEditorPlaceable {
+    width: 50px;
+    height: 50px;
+    position: initial;
+}
+
+
 .level {
     width: 100%;
     height: 100%;
+}
+
+.astronautLevelEditor {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    background-image: url("resources/assets/Astronaut.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
 }
 
 #lives {
@@ -342,10 +480,201 @@ html, body {
 #numberOfLives {
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
+}
+
+.formGridSettingsLevelEditor {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.imageOption {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    
+    /* background-color: #12094d; */
+}
+
+.monsterText{
+    text-align:center;
+    color:white;
+    text-shadow: 0px 0px 8px black;
+    font-size:x-large;
+    font-weight:900;
+    cursor: default;
+}
+
+.currentSelected {
+    margin-top: 20px;
+}
+
+.recycling {
+    background-image: url("resources/assets/delete.svg");;
+}
+
+.abyssLevelEditor {
+    background-color: black;
+    opacity: 0.5;
+}
+
+.sidebar {
+    justify-content: normal;
+    width: calc(50% - 15px);
+    max-height: 350px;
+}
+
+.labelEditorDropdown {
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.selectedContainer {
+    padding: 20px;
+}
+
+.selectedItems {
+    float: left;
+    margin-left: 5px;
+}
+
+.selectImage {
+    width: 40px;
+    height: 40px;
+    background-color: lightgray;
+
+}
+
+.selectBox {
+    display: flex;
+    background-color: #12094d;
+    flex-direction: row;
+    flex-wrap: wrap;
+    z-index: 2;
+    position: relative;
+    padding-left: 5px;
+}
+
+.formDropdown {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageDropdown {
+    width: 50px;
+    height: 50px;
+    margin: 3px;
+}
+
+.dropdownLabels {
+    text-align: center;
+    margin-top:10px;
+}
+
+.absolutEntity {
+    position: absolute;
+}
+
+.speedUp {
+    background-image: url("resources/assets/fast.svg");
+}
+
+.speedDown {
+    background-image: url("resources/assets/slow.svg");
+}
+
+.visibilityUp {
+    background-image: url("resources/assets/bigger_viewfield.svg");
+}
+
+.visibilityDown {
+    background-image: url("resources/assets/smaller_viewfield.svg");
+}
+
+.powerUpEditor {
+    margin-bottom: 10px;
+    justify-content: center;
+    width: 80%;
+}
+
+.editorInfo {
+    font-size: 15px;
+    max-width: 300px;
+    max-height: 50px;
+    background-color: lightgray;
+    overflow: auto;
+    z-index: 2;
+}
+.text {
+    color: lightgray;
+    font-size: 20px;
+    padding: 0 2px 0 2px;
+    align-items: center;
+    margin: 5px;
+}
+.placeableItems{
+    max-width: 550px;
+}
+.editorLasergate{
+    margin-right: 10px;
+}
+.placeableItemsDrop{
+    max-width: 700px;
+}
+.powerUp {
+    flex-direction: column;
+    top: -115px;
+    left: 210px;
+    position: relative;
+    max-width: 350px;
+}
+.biggerInputSettings {
+    flex-direction: row;
+    width: 60px;
+    height: 35px;
+    margin-top: 5px;
+}
+.settingTrap{
+    flex-direction: column;
+    top: -75px;
+    left: 100px;
+    position: relative;
+    max-width: 350px;
+}
+.editorButton{
+    margin-left: 3px;
 }
 
 .powerUpsOverlay {
     width: 50px;
     height: 50px;
+}
+
+.customOutBox {
+    left: 10px;
+    top: 5px;
+    width:30%;
+    height:50%;
+    position:absolute;
+}
+.customOut {
+    width: 100%;
+    height: 100%;
+    background-color: lightgrey;
+}
+
+.lasergateHorizontal{
+    background-image: url("resources/assets/Lasergate_Horizontal.png");
+}
+.lasergateVertical{
+    background-image: url("resources/assets/Lasergate_Vertical.png");
 }

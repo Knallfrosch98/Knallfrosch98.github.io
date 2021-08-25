@@ -8017,7 +8017,7 @@ $S:3}
 Q.hu.prototype={
 $1:function(a){var s,r,q,p,o,n,m,l,k=1e4
 switch(this.c){case"Lasergate":s=J.P(a)
-if(s.i(a,"x")!=null&&s.i(a,"y")!=null&&s.i(a,"endx")!=null&&s.i(a,"endy")==null&&s.i(a,"on")!=null&&s.i(a,"off")!=null){r=s.i(a,"on")
+if(s.i(a,"x")!=null&&s.i(a,"y")!=null&&s.i(a,"endx")!=null&&s.i(a,"endy")!=null&&s.i(a,"on")!=null&&s.i(a,"off")!=null){r=s.i(a,"on")
 q=s.i(a,"off")
 if(J.aY(r,1000))r=1000
 if(J.a5(r,k))r=k

@@ -306,15 +306,19 @@ html, body {
 }
 
 .Overlay {
-    display: inline-grid;
     width: 50%;
-    grid-template-columns: repeat(3, calc(100% / 3));
-    background-color: white;
-    border-left: 1px solid black;
     margin: auto auto 0;
 }
 
-.Overlay > div {
+.Overlay2 {
+    display: inline-grid;
+    grid-template-columns: repeat(3, calc(100% / 3));
+    background-color: white;
+    border-left: 1px solid black;
+    width: 100%;
+}
+
+.Overlay2 > div {
     display: flex;
     justify-content: center;
     border-top: 1px solid black;
@@ -323,6 +327,16 @@ html, body {
     height: 55px;
     align-items: center;
 }
+
+.powerUpOverlay {
+    z-index: 6;
+    width: 70%;
+    position: absolute;
+    display: flex;
+    place-content: center;
+}
+
+
 
 .lineBreak {
     white-space: pre-line;
@@ -472,7 +486,7 @@ html, body {
 
 #lives {
     display: grid;
-    grid-template-columns: 50px fit-content(100%);
+    grid-template-columns: 50px 50px fit-content(100%);
     justify-content: center;
 }
 
@@ -653,9 +667,10 @@ html, body {
     margin-left: 3px;
 }
 
-.powerUpsOverlay {
+.size50 {
     width: 50px;
     height: 50px;
+    background-color: white;
 }
 
 .customOutBox {

@@ -27,7 +27,6 @@ html, body {
     overflow: hidden;
     position: relative;
     margin: 0 auto auto;
-    border: 2px solid black;
     background-color: black;
     justify-items: center;
     align-items: center;
@@ -313,6 +312,7 @@ html, body {
     display: inline-grid;
     grid-template-columns: repeat(3, calc(100% / 3));
     background-color: white;
+    box-sizing: border-box;
     border-left: 1px solid black;
     width: 100%;
 }
@@ -483,16 +483,32 @@ html, body {
     background-position: center center;
 }
 
-#lives {
+.countableEntities {
     display: grid;
+    gap: 10px;
     grid-template-columns: 50px 50px fit-content(100%);
     justify-content: center;
 }
 
+.lives {
+    position: relative;
+    background-image: url("resources/assets/extralife.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+    width: 50px;
+    height: 50px;
+}
+
+.lives > div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
 #numberOfLives {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    place-content: start;
 }
 
 .formGridSettingsLevelEditor {

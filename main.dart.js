@@ -1960,7 +1960,7 @@ if(Object.getPrototypeOf(a)!==Array.prototype)return new P.eA(a,Object.create(nu
 for(s=0;s<a.length;++s)a[s]=P.j_(a[s])
 return a},
 jY:function(a,b,c){return new P.cP(a,b)},
-mw:function(a){return a.fP()},
+mw:function(a){return a.fQ()},
 m8:function(a,b){return new P.iE(a,[],P.n4())},
 m9:function(a,b,c){var s,r=new P.ce(""),q=P.m8(r,b)
 q.bx(a)
@@ -2478,7 +2478,7 @@ a1=r.querySelector("#slowOverlay")
 a2=r.querySelector("#KeyOverlay")
 a3=r.querySelector("#Invert_ControlOverlay")
 r=r.querySelector(".powerUpOverlay")
-a4=new O.i9(q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,r,J.ax(window.navigator.userAgent,"iPhone")||J.ax(window.navigator.userAgent,"iPad")||J.ax(window.navigator.userAgent,"Android")||!1)
+a4=new O.i9(q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,r,J.ax(window.navigator.userAgent,"iPhone")||J.ax(window.navigator.userAgent,"iPad")||J.ax(window.navigator.userAgent,"Android")||null.gfP(null).N(0,0))
 a4.a=a5
 a4.scp(P.hE(t.m))
 a4.aW()
@@ -5388,12 +5388,12 @@ return q+((q&16383)<<15)&536870911},
 l:function(a,b){var s,r,q,p,o=this.$ti
 o.a(b)
 s=this.a
-r=b.gfQ(b)
+r=b.gfR(b)
 if(typeof s!=="number")return s.l()
 q=o.c
 r=q.a(C.c.l(s,r))
 s=this.b
-p=b.gfR(b)
+p=b.gfS(b)
 if(typeof s!=="number")return s.l()
 return new P.aI(r,q.a(C.c.l(s,p)),o)},
 t:function(a,b){var s,r,q,p,o=this.$ti

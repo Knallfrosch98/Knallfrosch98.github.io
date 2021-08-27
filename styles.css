@@ -231,10 +231,6 @@ html, body {
     min-width: 240px;
 }
 
-#pauseButton {
-    width: 50% !important;
-}
-
 .viewblock {
     background-color: black;
     opacity: 1;

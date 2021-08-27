@@ -1,248 +1,224 @@
-<div id="backgroundEditor" class="background levelEditor">
-    <div id="settings" class="levelEditorSections">
-        <form id="settingsGrid" class="levelEditor settingSection sectionleft">
-            <label id="columns" for="spalten" class="levelEditorLabels levelEditorSections settingSection">
-                Spalten:
-                <input id="spalten" class="editorInput" type="number" min="5" max="20" step="1" value="5">
+<div id="backgroundEditor" class="flex flexCol sizeMax alignCenter">
+    <div id="settings" class="flex flexRow alignCenter width100">
+        <form id="settingsGrid"
+            class="flex flexCol alignCenter width100 maxWidth240 marginTop5 marginBot5 marginLeftAuto">
+            <label id="columnsLabel" for="columns"
+                class="flex flexRow maxWidth240 marginLeft5 marginRight5 width100 alignCenter marginTop5 marginBot5 elementStyle backgroundGrey borderRad">
+                Columns:
+                <input id="columns" class="editorInput textCenter marginLeft5" type="number" min="5" max="20" step="1" value="5">
             </label>
 
-            <label id="rows" for="zeilen" class="levelEditorLabels levelEditorSections settingSection">
-                Zeilen:
-                <input id="zeilen" class="editorInput" type="number" min="5" max="20" step="1" value="5">
+            <label id="rowsLabel" for="rows"
+                class="flex flexRow maxWidth240 marginLeft5 marginRight5 width100 alignCenter marginTop5 marginBot5 elementStyle backgroundGrey borderRad">
+                Rows:
+                <input id="rows" class="editorInput textCenter marginLeft5" type="number" min="5" max="20" step="1" value="5">
             </label>
         </form>
-        <div id="settingbuttons" class="levelEditor settingSection sectionright">
-            <button id="generateLevel" class="menuButton editorButton settingSection pointer">Level anzeigen</button>
-            <button id="backToMenuButtonLevelEditor" class="menuButton editorButton settingSection pointer">Übersicht</button>
+        <div id="settingbuttons"
+            class="flex flexCol alignCenter width100 maxWidth240 marginTop5 marginBot5 marginRightAuto">
+            <button id="generateLevel"
+                class="elementStyle backgroundGrey borderRad marginLeft5 marginRight5 width100 maxWidth240 marginTop5 marginBot5 pointer">Generate
+                Field</button>
+            <button id="backToMenuButtonLevelEditor"
+                class="elementStyle backgroundGrey borderRad marginLeft5 marginRight5 width100 maxWidth240 marginTop5 marginBot5 pointer">Overview</button>
         </div>
     </div>
-    <div id="editorView" class="levelEditorSections">
-        <div id="editorsection" class="editorSection scrollable">
-            <div id="editor" class="levelEditorLevel grideditor">
+    <div id="editorView" class="flex flexRow width100 hidden">
+        <div id="editorsection" class="widthCalc50 grid maxHeight350 margin5 scrollable">
+            <div id="editor" class="justifyEnd grid grideditor">
             </div>
         </div>
-        <div id="editorsidebar" class="levelEditor sectionright sidebar">
-            <div id="selectedAndRemove" class="selectedContainer hidden">
-                <div id="currentItemBox">
-                    <p id="labelCurrentItem" class="text">
-                        Aktuelles Item
+        <div id="editorsidebar" class="flex flexCol marginRightAuto widthCalc50 minHeight320">
+            <div id="selectedAndRemove" class="flex margin5">
+                <div id="currentItemBox" class="flex flexCol margin5">
+                    <p id="labelCurrentItem" class="text margin5  textCenter">
+                        Selected Item
                     </p>
-                    <div id="currentSelectedItem" class="currentSelected selectedItems">
+                    <div id="currentSelectedItem">
                     </div>
                 </div>
-                <div id="BinBox">
-                    <p id="labelBin" class="text">
-                        Löschen
+                <div id="BinBox" class="flex flexCol margin5">
+                    <p id="labelBin" class="text margin5  textCenter">
+                        Delete
                     </p>
-                    <div id="Bin" class="recycling imageOption selectedItems levelEditorPlaceable pointer">
+                    <div id="Bin" class="recycling imageOption size50 selfCenter pointer">
                     </div>
                 </div>
-                <div id="infoBox">
-                    <p id="labelInfo" class="text">
-                        Meldungen
-                    </p>
-                    <p id="info" class="selectedItems editorInfo scrollable"></p>
+                <div id="infoBox" class="flex flexCol margin5">
+                    <label id="labelInfo" class="text margin5">
+                        Info
+                    </label>
+                    <p id="info" class="editorInfo backgroundLightgrey marginLeft5 marginRight5 marginTopBot0 scrollable"></p>
                 </div>
             </div>
-            <div id="placeableGrid" class="levelEditorPlaceableGrid selector ">
-                <div id="StartBox">
-                    <p id="labelStart" class="text">
+            <div id="placeableGrid" class="flex flexRow selector margin5">
+                <div id="Start" class="flex flexCol alignCenter margin5">
+                    <p id="labelStart" class="text margin5 textCenter">
                         Start
                     </p>
-                    <div id="Start" class="path astronaut levelEditorPlaceable imageDropdown pointer"></div>
+                    <div id="StartImg" class="path astronaut relative size50 margin5 pointer"></div>
                 </div>
-                <div id="GoalBox">
-                    <p id="labelGoal" class="text">
-                        Ziel
+                <div id="Goal" class="flex flexCol alignCenter margin5">
+                    <p id="labelGoal" class="text margin5 textCenter">
+                        Goal
                     </p>
-                    <div id="Goal" class="goal_unlocked levelEditorPlaceable imageDropdown pointer"></div>
+                    <div id="GoalImg" class="goal_unlocked size50 margin5 pointer"></div>
                 </div>
-                <div id="WallBox">
-                    <p id="labelWall" class="text">
-                        Wand
+                <div id="Wall" class="flex flexCol alignCenter margin5">
+                    <p id="labelWall" class="text margin5 textCenter">
+                        Wall
                     </p>
-                    <div id="Wall" class="wall levelEditorPlaceable imageDropdown pointer"></div>
+                    <div id="WallImg" class="wall size50 margin5 pointer"></div>
                 </div>
-                <div id="PathBox">
-                    <p id="labelPath" class="text">
-                        Weg
+                <div id="Path" class="flex flexCol alignCenter margin5">
+                    <p id="labelPath" class="text margin5 textCenter">
+                        Path
                     </p>
-                    <div id="Path" class="path levelEditorPlaceable imageDropdown pointer"></div>
+                    <div id="PathImg" class="path size50 margin5 pointer"></div>
                 </div>
-                <div id="AbyssBox">
-                    <p id="labelAbyss" class="text">
-                        Abgrund
+                <div id="Abyss" class="flex flexCol alignCenter margin5">
+                    <p id="labelAbyss" class="text margin5 textCenter">
+                        Abyss
                     </p>
-                    <div id="Abyss" class="abyssLevelEditor levelEditorPlaceable imageDropdown pointer"></div>
+                    <div id="AbyssImg" class="blackHalfOpacity size50 margin5  pointer"></div>
                 </div>
             </div>
 
-            <div id="dropDownPlaceable" class="placeableItemsDrop hidden">
-                <div id="Laserfield" class="levelEditorLabels labelEditorDropdown">
-                    <form id="laserfieldForm" class="formDropdown">
-                        <label class="dropdownLabels">Laserfield:
-                        </label>
-                        <div id="laserfieldSelect" class="selectImage"></div>
-                        <div id="laserfieldDropdown" class="selector selectBox">
-                            <div id="LF-blrt" ></div>
-                            <div id="LF-b"></div>
-                            <div id="LF-bl"></div>
-                            <div id="LF-br"></div>
-                            <div id="LF-blr"></div>
-                            <div id="LF-l"></div>
-                            <div id="LF-lr"></div>
-                            <div id="LF-r"></div>
-                            <div id="LF-t"></div>
-                            <div id="LF-tb"></div>
-                            <div id="LF-rt"></div>
-                            <div id="LF-lt"></div>
-                            <div id="LF-blt"></div>
-                            <div id="LF-brt"></div>
-                            <div id="LF-lrt"></div>
-                        </div>
-                    </form>
+            <div id="dropDownPlaceable" class="maxWidth700 flex margin5 hidden">
+                <div id="Laserfield"
+                    class="elementStyle backgroundGrey borderRad width100 marginLeft5 zindex5 flex flexRow alignCenter relative">
+                    <label id="laserfieldLabel" class="marginRight5">Laserfield:
+                    </label>
+                    <div id="laserfieldSelect" class="size40"></div>
+                    <div id="laserfieldDropdown"
+                        class="selector flex flexRow backgroundGrey borderTopNoRad paddingBot5 alignCenter borderBox borderGrey absolut top100 hidden">
+                    </div>
                 </div>
-                <div id="Airvent" class="levelEditorLabels labelEditorDropdown">
-                    <form id="airventForm" class="formDropdown">
-                        <label class="dropdownLabels">
-                            Airvent:
-                        </label>
-                        <div id="airventSelect" class="selectImage"></div>
-                        <div id="airventDropdown" class="selector selectBox">
-                            <div id="Airvent-l"></div>
-                            <div id="Airvent-r"></div>
-                            <div id="Airvent-t"></div>
-                            <div id="Airvent-b"></div>
-                        </div>
-                        <label id="airstream" for="luftzug" class="levelEditorLabels dropdownLabels hidden">
-                            Luftzugstärke:
-                            <input id="luftzug" class="editorInput" type="number" min="0.5" max="2.0" step="0.1"
-                                   value="1">
-                        </label>
-                    </form>
+                <div id="Airvent"
+                    class="elementStyle  backgroundGrey borderRad width100 zindex5 flex flexRow marginLeft5 alignCenter relative">
+                    <label id="airventLabel" class="marginRight5">
+                        Airvent:
+                    </label>
+                    <div id="airventSelect" class="size40"></div>
+                    <div id="airventDropdown"
+                        class="selector borderTopNoRad width100 flex flexRow zindex5 backgroundGrey paddingBot5 alignCenter borderBox borderGrey absolut top100 hidden">
+                    </div>
+                    <label id="airstreamLabel" for="airstream"
+                        class="flex alignCenter elementStyle backgroundGrey borderTopNoRad paddingBot5 width100  hidden absolut top100 ">
+                        Stream strenght:
+                        <input id="airstream" class="editorInput textCenter marginLeft5" type="number" min="0.5" max="2.0" step="0.1"
+                            value="1">
+                    </label>
                 </div>
             </div>
-            <div id="traps" class="placeableItemsDrop selector hidden">
-                <div id="LasergateBox">
-                    <p id="labelLasergate" class="text">
+            <div id="traps" class="maxWidth700 flex flexRow selector heigh4EM margin5 hidden">
+                <div id="Lasergate" class="flex flexCol alignCenter">
+                    <p id="labelLasergate" class="text margin5 textCenter">
                         Lasergate
                     </p>
-                    <div id="Lasergate" class="lasergateHorizontal imageOption levelEditorPlaceable imageDropdown pointer"></div>
+                    <div id="LasergateImg" class="lasergateHorizontal imageOption size50 margin5 pointer"></div>
+                </div>
+                <div id="lasergateSettings" class="flex flexCol alignCenter hidden minWidth380 ">
+                    <label id="onTime" for="on"
+                        class="elementStyle borderBotNoRad backgroundGrey width80 alignCenter flex flexRow">
+                        On Time:
+                        <input id="on" class="editorInput textCenter flex flexRow alignCenter" type="number" min="1000" max="10000"
+                            step="500" value="2000">
+                    </label>
+                    <label id="offTime" for="off"
+                        class="elementStyle borderTopNoRad backgroundGrey width80 alignCenter flex flexRow">
+                        Off Time:
+                        <input id="off" class="editorInput textCenter flex flexRow alignCenter" type="number" min="2000"
+                            max="10000" step="500" value="3000">
+                    </label>
                 </div>
             </div>
-            <div id="lasergateSettings" class="placeableItemsDrop settingTrap hidden">
-                <label id="onTime" for="an" class="levelEditorLabels dropdownLabels powerUpEditor">
-                    Aktive Zeit:
-                    <input id="an" class="editorInput biggerInputSettings" type="number" min="1000" max="10000"
-                           step="500"
-                           value="2000">
-                </label>
-                <label id="offTime" for="aus" class="levelEditorLabels dropdownLabels powerUpEditor">
-                    Inaktive Zeit:
-                    <input id="aus" class="editorInput biggerInputSettings" type="number" min="2000" max="10000"
-                           step="500"
-                           value="3000">
-                </label>
-            </div>
-            <div id="placeableItems" class="levelEditorPlaceableGrid placeableItems selector hidden">
-                <div id="KeyBox">
-                    <p id="labelKey" class="text">
-                        Schlüssel
-                    </p>
-                    <div id="Key" class="key imageOption levelEditorPlaceable imageDropdown pointer"></div>
+
+            <div id="placeableItems" class="maxWidth700 flex hidden">
+                <div id="absolutItems" class="flex flexRow alignCenter width50 selector">
+                    <div id="Key" class="flex flexCol alignCenter margin5">
+                        <p id="labelKey" class="text margin5 textCenter">
+                            Key
+                        </p>
+                        <div id="KeyImg" class="key imageOption size50 relative pointer"></div>
+                    </div>
+                    <div id="Life" class="flex flexCol alignCenter margin5">
+                        <p id="labelLife" class="text margin5 textCenter">
+                            Life
+                        </p>
+                        <div id="LifeImg" class="life flexCol imageOption size50 relative pointer"></div>
+                    </div>
+                    <div id="Invert" class="flex flexCol alignCenter margin5">
+                        <p id="labelInvert" class="text margin5 textCenter">
+                            Invert
+                        </p>
+                        <div id="InvertImg" class="invert imageOption size50 relative pointer"></div>
+                    </div>
+                    <div id="Speed-Up" class="flex flexCol alignCenter margin5">
+                        <p id="labelSpeed-Up" class="text margin5 textCenter">
+                            SpeedUp
+                        </p>
+                        <div id="Speed-UpImg" class="speedUp imageOption size50 relative pointer "></div>
+                    </div>
+                    <div id="Speed-Down" class="flex flexCol alignCenter margin5">
+                        <p id="labelSpeed-Down" class="text margin5 textCenter">
+                            Speed<br>Down
+                        </p>
+                        <div id="Speed-DownImg" class="speedDown imageOption size50 relative pointer"></div>
+                    </div>
+                    <div id="Visibility-Up" class="flex flexCol alignCenter margin5">
+                        <p id="labelVisibility-Up" class="text margin5 textCenter">
+                            ViewUp
+                        </p>
+                        <div id="Visibility-UpImg" class="visibilityUp imageOption size50 relative pointer "></div>
+                    </div>
+                    <div id="Visibility-Down" class="flex flexCol alignCenter margin5">
+                        <p id="labelVisibility-DownImg" class="text margin5 textCenter">
+                            View<br>Down
+                        </p>
+                        <div id="Visibility-DownImg" class="visibilityDown imageOption size50 relative pointer">
+                        </div>
+                    </div>
                 </div>
-                <div id="LifeBox">
-                    <p id="labelLife" class="text">
-                        Extraleben
-                    </p>
-                    <div id="Life" class="life imageOption levelEditorPlaceable imageDropdown pointer"></div>
-                </div>
-                <div id="InvertBox">
-                    <p id="labelInvert" class="text">
-                        Invertierung
-                    </p>
-                    <div id="Invert" class="invert imageOption levelEditorPlaceable imageDropdown pointer"></div>
-                </div>
-                <div id="Speed-UpBox">
-                    <p id="labelSpeed-Up" class="text">
-                        SpeedUp
-                    </p>
-                    <div id="Speed-Up" class="speedUp imageOption levelEditorPlaceable imageDropdown pointer "></div>
-                </div>
-                <div id="Speed-DownBox">
-                    <p id="labelSpeed-Down" class="text">
-                        SpeedDown
-                    </p>
-                    <div id="Speed-Down" class="speedDown imageOption levelEditorPlaceable imageDropdown pointer"></div>
-                </div>
-                <div id="Visibility-UpBox">
-                    <p id="labelVisibility-Up" class="text">
-                        Sichtfeld<br>erhöhen
-                    </p>
-                    <div id="Visibility-Up" class="visibilityUp imageOption levelEditorPlaceable imageDropdown pointer "></div>
-                </div>
-                <div id="Visibility-DownBox">
-                    <p id="labelVisibility-Down" class="text">
-                        Sichtfeld<br>verringern
-                    </p>
-                    <div id="Visibility-Down" class="visibilityDown imageOption levelEditorPlaceable imageDropdown pointer">
+                <div id="powerUps" class="flex flexCol width50">
+                    <div id="durationBox"
+                        class="flex elementStyle backgroundGrey alignCenter borderRad width80 marginLeft5 marginTop5 marginRight5 hidden">
+                        <label id="durationLabel" for="duration" class="text margin5 textCenter">Duration:</label>
+                        <input id="duration" class="editorInput textCenter flex flexRow alignCenter" type="number" min="1000"
+                            max="10000" step="500" value="3000">
+                    </div>
+                    <div id="valueBox"
+                        class="flex elementStyle backgroundGrey alignCenter borderTopNoRad width80 marginLeft5 marginRight5 marginBot5 hidden">
+                        <label id="valueLabel" for="valueInput" class="text margin5 textCenter"></label>
+                        <input id="valueInput" class="editorInput textCenter flex flexRow alignCenter" type="number" min="2"
+                            max="10" step="1" value="5">
                     </div>
                 </div>
             </div>
-            <div id="powerUps" class="powerUp hidden">
-                <label id="duration" for="dauer" class="levelEditorLabels dropdownLabels powerUpEditor hidden">
-                    Dauer:
-                    <input id="dauer" class="editorInput biggerInputSettings" type="number" min="1000" max="10000"
-                           step="500"
-                           value="10000">
-                </label>
-                <label id="multiplierUp" for="geschwindigkeitUp"
-                       class="levelEditorLabels dropdownLabels powerUpEditor hidden">
-                    Geschwindigkeit:
-                    <input id="geschwindigkeitUp" class="editorInput" type="number" min="2" max="10" step="1"
-                           value="5">
-                </label>
-                <label id="multiplierDown" for="geschwindigkeitDown"
-                       class="levelEditorLabels dropdownLabels powerUpEditor hidden">
-                    Geschwindigkeit:
-                    <input id="geschwindigkeitDown" class="editorInput" type="number" min="0.1" max="0.9" step="0.1"
-                           value="0.9">
-                </label>
-                <label id="differenceUp" for="unterschiedUp"
-                       class="levelEditorLabels dropdownLabels powerUpEditor hidden">
-                    Unterschied:
-                    <input id="unterschiedUp" class="editorInput" type="number" min="1" max="2" step="1" value="2">
-                </label>
-                <label id="differenceDown" for="unterschiedDown"
-                       class="levelEditorLabels dropdownLabels powerUpEditor hidden">
-                    Unterschied:
-                    <input id="unterschiedDown" class="editorInput" type="number" min="-2" max="-1" step="1" value="-1">
-                </label>
-            </div>
-            <div id="MonsterSection" class="hidden">
-                <div id="Monster" class="levelEditorPlaceableGrid selector ">
-                    <div id="RunnerBox">
-                        <p id="labelRunner" class="text">
+            <div id="MonsterSection" class="flex hidden">
+                <div id="Monster" class="flex flexRow selector ">
+                    <div id="Runner" class="flex flexCol alignCenter margin5">
+                        <label id="labelRunner" class="text margin5 textCenter">
                             Runner
-                        </p>
-                        <div id="Runner" class="runner levelEditorPlaceable imageDropdown pointer"></div>
+                        </label>
+                        <div id="RunnerImg" class="runner imageOption size50 relative pointer"></div>
                     </div>
-                    <div id="PatrolerBox">
-                        <p id="labelPatroler" class="text">
+                    <div id="Patroler" class="flex flexCol alignCenter margin5">
+                        <label id="labelPatroler" class="text margin5 textCenter">
                             Patroler
-                        </p>
-                        <div id="Patroler" class="patroler levelEditorPlaceable imageDropdown pointer"></div>
+                        </label>
+                        <div id="PatrolerImg" class="patroler imageOption size50 relative pointer"></div>
                     </div>
                 </div>
-                <button id="PatrolSubmit" class="menuButton  pointer">Next Patroler</button>
+                <button id="PatrolSubmit" class="elementStyle backgroundGrey borderRad width50 margin5 selfCenter pointer">Submit Patroler</button>
             </div>
         </div>
     </div>
-    <div id="editorbutton" class="levelEditorSections hidden">
-        <button id="stateBack" class="menuButton editorButton hidden  pointer">Zurück</button>
-        <button id="save" class="menuButton editorButton  pointer"></button>
-        <pre id="jsonOutput" class="levelEditorLevelJson"></pre>
-        <button id="jsonGenerate" class="menuButton editorButton hidden  pointer">Quelltext Anzeigen</button>
-        <button id="jsonCopy" class="menuButton editorButton hidden  pointer">JSON Kopieren</button>
+    <div id="editorbutton" class="flex flexRow alignCenter margin5 hidden">
+        <button id="stateBack" class="elementStyle backgroundGrey borderRad width240 margin5 hidden pointer">Back</button>
+        <button id="save" class="elementStyle backgroundGrey borderRad width240 margin5 pointer"></button>
+        <pre id="jsonOutput" class="flex backgroundLightgrey widthCalc50 maxHeight350 absolut zindex5 scrollable hidden"></pre>
+        <button id="jsonGenerate" class="elementStyle backgroundGrey borderRad width240 margin5 hidden pointer"></button>
+        <button id="jsonCopy" class="elementStyle backgroundGrey borderRad width240 margin5 hidden pointer">Copy JSON</button>
     </div>
 </div>

@@ -20,19 +20,19 @@
       <button id="LevelEditorButton" class="menuButton pointer">LEVELEDITOR</button>
     </div>
 
-    <div id="levelEditorBox" class="editor maxSize hidden">
-      <div id='editorOverview' class="levelEditor maxSize editorOverview">
-        <div id="overviewSection" class="levelEditorSections">
-          <button id="editorBack" class="menuButton sectionleft backToMenu pointer">Menü</button>
-          <button id="newLevel" class="menuButton sectionright pointer">neues Level</button>
+    <div id="levelEditorBox" class="block scrollable sizeMax hidden">
+      <div id='editorOverview' class="flex flexCol alignCenter sizeMax editorOverview">
+        <div id="overviewSection" class="flex flexRow alignCenter width100">
+          <button id="editorBack" class="menuButton marginLeftAuto backToMenu pointer">Menu</button>
+          <button id="newLevel" class="menuButton marginRightAuto pointer">new Level</button>
         </div>
-        <div id="customlevelbox" class="levelEditor editorOverview"></div>
-        <div id="customLevelOutbox" class="levelEditor customOutBox hidden">
-          <pre id="customOut" class="customOut scrollable"></pre>
-          <button id="customCopy" class="menuButton pointer">Quelltext kopieren</button>
+        <div id="customlevelbox" class="flex flexCol alignCenter editorOverview"></div>
+        <div id="customLevelOutbox" class="flex customOutBox absolut flexCol alignCenter hidden">
+          <pre id="customOut" class="backgroundLightgrey sizeMax scrollable"></pre>
+          <button id="customCopy" class="elementStyle backgroundGrey borderRad width240 pointer">Copy JSON</button>
         </div>
       </div>
-      <div id="levelEditor" class="editor maxSize hidden"></div>
+      <div id="levelEditor" class="block scrollable sizeMax hidden"></div>
     </div>
     <div id="levelOverview" class="menu"></div>
 
@@ -44,20 +44,20 @@
             <div id="lives" class="lives">
               <div id="numberOfLives"></div>
             </div>
-            <img src="resources/assets/Key.svg" alt="" id="KeyOverlay" class="size50">
+            <img src="resources/assets/Key.svg" alt="" id="KeyOverlay" class="size50 path">
           </div>
           <div>
             <button id="pauseButton" class="menuButton">Pause</button>
           </div>
-          
+
         </div>
         <div id="powerUps" class="powerUpOverlay">
-          <img src="resources/assets/bigger_viewfield.svg" alt="" id="bigger_viewfieldOverlay" class="size50">
+          <img src="resources/assets/bigger_viewfield.svg" alt="" id="bigger_viewfieldOverlay" class="size50 path">
           <img src="resources/assets/smaller_viewfield.svg" alt="" id="smaller_viewfieldOverlay"
-            class="size50">
-          <img src="resources/assets/fast.svg" alt="" id="fastOverlay" class="size50">
-          <img src="resources/assets/slow.svg" alt="" id="slowOverlay" class="size50">
-          <img src="resources/assets/Invert_Control.svg" alt="" id="Invert_ControlOverlay" class="size50">
+            class="size50 path">
+          <img src="resources/assets/fast.svg" alt="" id="fastOverlay" class="size50 path">
+          <img src="resources/assets/slow.svg" alt="" id="slowOverlay" class="size50 path">
+          <img src="resources/assets/Invert_Control.svg" alt="" id="Invert_ControlOverlay" class="size50 path">
         </div>
       </div>
 
@@ -92,7 +92,7 @@
     function requestOrientationPermission() {
       if (navigator.userAgent.match('iPhone') ||
         navigator.userAgent.match('iPad') ||
-        navigator.userAgent.match('iPod')) {
+        navigator.userAgent.match('iPod') || (navigator.userAgent.match('Mac') && navigator.maxTouchPoints > 0)) {
         DeviceOrientationEvent.requestPermission()
           .then(response => {
             if (response == 'granted') {

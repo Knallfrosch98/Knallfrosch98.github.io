@@ -2478,7 +2478,7 @@ a1=r.querySelector("#slowOverlay")
 a2=r.querySelector("#KeyOverlay")
 a3=r.querySelector("#Invert_ControlOverlay")
 r=r.querySelector(".powerUpOverlay")
-a4=new O.i9(q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,r,J.ax(window.navigator.userAgent,"iPhone")||J.ax(window.navigator.userAgent,"iPad")||J.ax(window.navigator.userAgent,"Android"))
+a4=new O.i9(q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,r,J.ax(window.navigator.userAgent,"iPhone")||J.ax(window.navigator.userAgent,"iPad")||J.ax(window.navigator.userAgent,"Android")||!1)
 a4.a=a5
 a4.scp(P.hE(t.m))
 a4.aW()

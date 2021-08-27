@@ -197,9 +197,25 @@ html, body {
     gap: 20px;
     padding: 0 2px 0 2px;
     width: 20%;
-    min-width: 106px;
+    min-width: 200px;
     height: 2em;
+}
 
+.leveltext {
+    font-size: 23px;
+    text-transform: uppercase;
+    text-align: center;
+    align-items: center;
+    color: white;
+    margin: 0;
+}
+
+.timetext {
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    margin: 0;
 }
 
 .pointer{
@@ -213,6 +229,10 @@ html, body {
 #pauseMenu button {
     width: 95% !important;
     min-width: 240px;
+}
+
+#pauseButton {
+    width: 50% !important;
 }
 
 .viewblock {

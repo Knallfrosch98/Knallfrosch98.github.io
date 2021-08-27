@@ -92,7 +92,7 @@
     function requestOrientationPermission() {
       if (navigator.userAgent.match('iPhone') ||
         navigator.userAgent.match('iPad') ||
-        navigator.userAgent.match('iPod') || (navigator.userAgent.match('Mac') && navigator.maxTouchPoints > 0)) {
+        navigator.userAgent.match('iPod')) {
         DeviceOrientationEvent.requestPermission()
           .then(response => {
             if (response == 'granted') {

@@ -7121,7 +7121,7 @@ A.fX.prototype={
 $1:function(a){var s,r,q,p,o=t.D
 o.a(a)
 if(!(a.alpha==null&&a.beta==null&&a.gamma==null)){s=this.a
-if(s.b==null){C.U.eZ(window,"test")
+if(s.b==null){C.U.eZ(window,"test2")
 r=new O.c3(s.a)
 q=window
 p=t.b1.a(r.gbi())

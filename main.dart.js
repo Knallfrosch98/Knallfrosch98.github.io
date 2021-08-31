@@ -1922,7 +1922,7 @@ if(Object.getPrototypeOf(a)!==Array.prototype)return new P.ev(a,Object.create(nu
 for(s=0;s<a.length;++s)a[s]=P.iH(a[s])
 return a},
 jG:function(a,b,c){return new P.cN(a,b)},
-m9:function(a){return a.fQ()},
+m9:function(a){return a.fP()},
 lN:function(a,b){return new P.ik(a,[],P.mI())},
 lO:function(a,b,c){var s,r=new P.cb(""),q=P.lN(r,b)
 q.by(a)
@@ -2465,10 +2465,7 @@ a1=r.querySelector("#slowOverlay")
 a2=r.querySelector("#KeyOverlay")
 a3=r.querySelector("#Invert_ControlOverlay")
 r=r.querySelector("#powerUps")
-if(!J.aK(window.navigator.userAgent,"iPhone"))if(!J.aK(window.navigator.userAgent,"Android"))if(J.aK(window.navigator.userAgent,"Mac")){null.gfP(null)
-a4=!0}else a4=!1
-else a4=!0
-else a4=!0
+a4=J.aK(window.navigator.userAgent,"iPhone")||J.aK(window.navigator.userAgent,"Android")||J.aK(window.navigator.userAgent,"Mac")
 a5=new O.hQ(q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,r,a4)
 a5.a=a7
 a5.scr(P.hn(t.m))
@@ -5276,12 +5273,12 @@ return q+((q&16383)<<15)&536870911},
 k:function(a,b){var s,r,q,p,o=this.$ti
 o.a(b)
 s=this.a
-r=b.gfR(b)
+r=b.gfQ(b)
 if(typeof s!=="number")return s.k()
 q=o.c
 r=q.a(C.b.k(s,r))
 s=this.b
-p=b.gfS(b)
+p=b.gfR(b)
 if(typeof s!=="number")return s.k()
 return new P.aG(r,q.a(C.b.k(s,p)),o)},
 q:function(a,b){var s,r,q,p,o=this.$ti

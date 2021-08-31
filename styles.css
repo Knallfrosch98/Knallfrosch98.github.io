@@ -20,28 +20,18 @@ html, body {
     flex-direction: column;
 }
 
-#camera {
-    display: block;
-    width: 50%;
-    height: 50%;
+.camera {
     overflow: hidden;
-    position: relative;
-    margin: 0 auto auto;
     background-color: black;
+    margin: 0 auto auto;
     justify-items: center;
-    align-items: center;
+    display: block;
+
+    position: relative;
+
 }
 
-#viewfield {
-    z-index: 5;
-}
-
-.gridfield {
-    position: absolute;
-    display: grid;
-}
-
-#background {
+.background {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -49,17 +39,53 @@ html, body {
     justify-content: center;
     align-items: center;
     align-content: center;
-
     background-image: url("resources/background/background.png");
     background-repeat: no-repeat;
 }
 
-#levelOverview {
-    display: none;
+.gridfield {
+    display: grid;
+    position: absolute;
 }
 
-.levelBackground {
-    background-image: url("resources/background/background.png");
+.menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+
+.buttonStyle {
+    font-size: 23px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #414141;
+    color: white;
+    border: none;
+    margin: 5px;
+    border-radius: 28px;
+    height: 2em;
+    cursor: pointer;
+}
+  
+.menuButtonWidth {
+    width: 20%;
+    min-width: 200px;
+}
+
+.level {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.repeat {
     background-repeat: repeat;
 }
 
@@ -71,9 +97,6 @@ html, body {
 }
 
 .astronaut {
-    width: 50px;
-    height: 50px;
-
     background-image: url("resources/assets/Astronaut.svg");
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -112,30 +135,23 @@ html, body {
     background-color: white;
 }
 
-.lasergate {
-    background-color: red;
-    position: absolute;
-}
-
-.menu {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    height: 100%;
-    width: 100%;
-}
-
 .life {
     background-image: url("resources/assets/extralife.svg");
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center center;
-
     position: absolute;
+}
+
+.lives {
+    background-image: url("resources/assets/extralife.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+    margin: 0 5px;
+    height: 50px;
+    width: 50px;
+    position: relative;
 }
 
 .key {
@@ -210,19 +226,12 @@ html, body {
     background-image: url("resources/assets/Lasergate_Vertical.png");
 }
 
-.menuButton {
-    font-size: 23px;
-    text-transform: uppercase;
-    text-align: center;
-    background-color: #414141;
-    color: white;
-    border: none;
-    border-radius: 28px;
-    gap: 20px;
-    padding: 0 2px 0 2px;
+.width20 {
     width: 20%;
+}
+
+.minWidth200 {
     min-width: 200px;
-    height: 2em;
 }
 
 .leveltext {
@@ -345,12 +354,12 @@ html, body {
     gap: 10px;
 }
 
-.Overlay {
+.overlay {
     width: 50%;
     margin: auto auto 0;
 }
 
-.Overlay2 {
+.fixedOverlay {
     display: inline-grid;
     grid-template-columns: repeat(3, calc(100% / 3));
     background-color: white;
@@ -359,7 +368,7 @@ html, body {
     width: 100%;
 }
 
-.Overlay2 > div {
+.fixedOverlay > div {
     display: flex;
     justify-content: center;
     border-top: 1px solid black;
@@ -369,15 +378,22 @@ html, body {
     align-items: center;
 }
 
+.fontSize23 {
+    font-size: 23px;
+}
+
 .powerUpOverlay {
+    display: flex;
     z-index: 6;
     width: 70%;
     position: absolute;
-    display: flex;
-    place-content: center;
 }
 
-
+#powerUps > img {
+    background-color: white;
+    width: 50px;
+    height: 50px;
+}
 
 .lineBreak {
     white-space: pre-line;
@@ -388,32 +404,10 @@ html, body {
     height: 100%;
 }
 
-.countableEntities {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: 50px 50px fit-content(100%);
-    justify-content: center;
-}
-
-.lives {
-    position: relative;
-    background-image: url("resources/assets/extralife.svg");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: center center;
-    width: 50px;
-    height: 50px;
-}
-
-.lives > div {
-    position: absolute;
+.numberPos{
     bottom: 0;
     left: 0;
-}
-
-#numberOfLives {
-    display: flex;
-    place-content: start;
+    position: absolute;   
 }
 
 .editorOverview {
@@ -494,7 +488,6 @@ html, body {
 }
 
 .elementStyle {
-    font-size: 23px;
     text-transform: uppercase;
     color: white;
     border: none;
@@ -531,11 +524,6 @@ html, body {
 
 .scrollable {
     overflow: auto;
-    scroll-snap-type: both mandatory;
-}
-
-.scrollSnapStart {
-    scroll-snap-align: start;
 }
 
 .paddingBot5 {
@@ -544,12 +532,18 @@ html, body {
 
 .marginLeftAuto {
     margin-left: auto;
-    margin-right: 5px;
 }
 
 .marginRightAuto {
-    margin-left: 5px;
     margin-right: auto;
+}
+
+.marginTopAuto {
+    margin-top: auto;
+}
+
+.marginBotAuto {
+    margin-bottom: auto;
 }
 
 .margin5 {
@@ -566,8 +560,11 @@ html, body {
 }
 
 
-.marginTopBot0 {
+.marginTop0 {
     margin-top: 0;
+}
+
+.marginBot0 {
     margin-bottom: 0;
 }
 
@@ -589,6 +586,14 @@ html, body {
 
 .backgroundGrey {
     background-color: #414141;;
+}
+
+.backgroundGreen {
+    background-color: #00854a;
+}
+
+.backgroundLightgreen {
+    background-color: #99ceb7;
 }
 
 .sizeMax {

@@ -1,26 +1,26 @@
 <div id="backgroundEditor" class="flex flexCol sizeMax alignCenter">
     <div id="settings" class="flex flexRow alignCenter width100">
         <form id="settingsGrid"
-            class="flex flexCol alignCenter width100 maxWidth240 marginTop5 marginBot5 marginLeftAuto">
+            class="flex flexCol alignCenter width100 maxWidth240 marginTop5 marginBot5 marginLeftAuto marginRight5">
             <label id="columnsLabel" for="columns"
-                class="flex flexRow maxWidth240 marginLeft5 marginRight5 width100 alignCenter marginTop5 marginBot5 elementStyle backgroundGrey borderRad">
+                class="flex flexRow maxWidth240 marginLeft5 marginRight5 width100 alignCenter marginTop5 marginBot5 elementStyle fontSize23 backgroundGrey borderRad">
                 Columns:
                 <input id="columns" class="editorInput textCenter marginLeft5" type="number" min="5" max="20" step="1" value="5">
             </label>
 
             <label id="rowsLabel" for="rows"
-                class="flex flexRow maxWidth240 marginLeft5 marginRight5 width100 alignCenter marginTop5 marginBot5 elementStyle backgroundGrey borderRad">
+                class="flex flexRow maxWidth240 marginLeft5 marginRight5 width100 alignCenter marginTop5 marginBot5 elementStyle fontSize23 backgroundGrey borderRad">
                 Rows:
                 <input id="rows" class="editorInput textCenter marginLeft5" type="number" min="5" max="20" step="1" value="5">
             </label>
         </form>
         <div id="settingbuttons"
-            class="flex flexCol alignCenter width100 maxWidth240 marginTop5 marginBot5 marginRightAuto">
+            class="flex flexCol alignCenter width100 maxWidth240 marginTop5 marginBot5 marginRightAuto marginLeft5">
             <button id="generateLevel"
-                class="elementStyle backgroundGrey borderRad marginLeft5 marginRight5 width100 maxWidth240 marginTop5 marginBot5 pointer">Generate
+                class="elementStyle fontSize23 backgroundGrey borderRad marginLeft5 marginRight5 width100 maxWidth240 marginTop5 marginBot5 pointer">Generate
                 Field</button>
             <button id="backToMenuButtonLevelEditor"
-                class="elementStyle backgroundGrey borderRad marginLeft5 marginRight5 width100 maxWidth240 marginTop5 marginBot5 pointer">Overview</button>
+                class="elementStyle fontSize23 backgroundGrey borderRad marginLeft5 marginRight5 width100 maxWidth240 marginTop5 marginBot5 pointer">Overview</button>
         </div>
     </div>
     <div id="editorView" class="flex flexRow width100 hidden">
@@ -28,7 +28,7 @@
             <div id="editor" class="justifyEnd grid grideditor">
             </div>
         </div>
-        <div id="editorsidebar" class="flex flexCol marginRightAuto widthCalc50 minHeight320">
+        <div id="editorsidebar" class="flex flexCol marginRightAuto marginLeft5 widthCalc50 minHeight320">
             <div id="selectedAndRemove" class="flex margin5">
                 <div id="currentItemBox" class="flex flexCol margin5">
                     <p id="labelCurrentItem" class="text margin5  textCenter">
@@ -48,7 +48,7 @@
                     <label id="labelInfo" class="text margin5">
                         Info
                     </label>
-                    <p id="info" class="editorInfo backgroundLightgrey marginLeft5 marginRight5 marginTopBot0 scrollable"></p>
+                    <p id="info" class="editorInfo backgroundLightgrey marginLeft5 marginRight5 marginTop0 marginBot0 scrollable"></p>
                 </div>
             </div>
             <div id="placeableGrid" class="flex flexRow selector margin5">
@@ -86,7 +86,7 @@
 
             <div id="dropDownPlaceable" class="maxWidth700 flex margin5 hidden">
                 <div id="Laserfield"
-                    class="elementStyle backgroundGrey borderRad width100 marginLeft5 zindex5 flex flexRow alignCenter relative">
+                    class="elementStyle fontSize23 backgroundGrey borderRad width100 marginLeft5 zindex5 flex flexRow alignCenter relative">
                     <label id="laserfieldLabel" class="marginRight5">Laserfield:
                     </label>
                     <div id="laserfieldSelect" class="size40"></div>
@@ -95,7 +95,7 @@
                     </div>
                 </div>
                 <div id="Airvent"
-                    class="elementStyle  backgroundGrey borderRad width100 zindex5 flex flexRow marginLeft5 alignCenter relative">
+                    class="elementStyle fontSize23  backgroundGrey borderRad width100 zindex5 flex flexRow marginLeft5 alignCenter relative">
                     <label id="airventLabel" class="marginRight5">
                         Airvent:
                     </label>
@@ -104,7 +104,7 @@
                         class="selector borderTopNoRad width100 flex flexRow zindex5 backgroundGrey paddingBot5 alignCenter borderBox borderGrey absolut top100 hidden">
                     </div>
                     <label id="airstreamLabel" for="airstream"
-                        class="flex alignCenter elementStyle backgroundGrey borderTopNoRad paddingBot5 width100  hidden absolut top100 ">
+                        class="flex alignCenter elementStyle fontSize23 backgroundGrey borderTopNoRad paddingBot5 width100  hidden absolut top100 ">
                         Stream strenght:
                         <input id="airstream" class="editorInput textCenter marginLeft5" type="number" min="0.5" max="2.0" step="0.1"
                             value="1">
@@ -120,13 +120,13 @@
                 </div>
                 <div id="lasergateSettings" class="flex flexCol alignCenter hidden minWidth380 ">
                     <label id="onTime" for="on"
-                        class="elementStyle borderBotNoRad backgroundGrey width80 alignCenter flex flexRow">
+                        class="elementStyle fontSize23 borderBotNoRad backgroundGrey width80 alignCenter flex flexRow">
                         On Time:
                         <input id="on" class="editorInput textCenter flex flexRow alignCenter" type="number" min="1000" max="10000"
                             step="500" value="2000">
                     </label>
                     <label id="offTime" for="off"
-                        class="elementStyle borderTopNoRad backgroundGrey width80 alignCenter flex flexRow">
+                        class="elementStyle fontSize23 borderTopNoRad backgroundGrey width80 alignCenter flex flexRow">
                         Off Time:
                         <input id="off" class="editorInput textCenter flex flexRow alignCenter" type="number" min="2000"
                             max="10000" step="500" value="3000">
@@ -182,13 +182,13 @@
                 </div>
                 <div id="powerUps" class="flex flexCol width50">
                     <div id="durationBox"
-                        class="flex elementStyle backgroundGrey alignCenter borderRad width80 marginLeft5 marginTop5 marginRight5 hidden">
+                        class="flex elementStyle fontSize23 backgroundGrey alignCenter borderRad width80 marginLeft5 marginTop5 marginRight5 hidden">
                         <label id="durationLabel" for="duration" class="text margin5 textCenter">Duration:</label>
                         <input id="duration" class="editorInput textCenter flex flexRow alignCenter" type="number" min="1000"
                             max="10000" step="500" value="3000">
                     </div>
                     <div id="valueBox"
-                        class="flex elementStyle backgroundGrey alignCenter borderTopNoRad width80 marginLeft5 marginRight5 marginBot5 hidden">
+                        class="flex elementStyle fontSize23 backgroundGrey alignCenter borderTopNoRad width80 marginLeft5 marginRight5 marginBot5 hidden">
                         <label id="valueLabel" for="valueInput" class="text margin5 textCenter"></label>
                         <input id="valueInput" class="editorInput textCenter flex flexRow alignCenter" type="number" min="2"
                             max="10" step="1" value="5">
@@ -210,15 +210,15 @@
                         <div id="PatrolerImg" class="patroler imageOption size50 relative pointer"></div>
                     </div>
                 </div>
-                <button id="PatrolSubmit" class="elementStyle backgroundGrey borderRad width50 margin5 selfCenter pointer">Submit Patroler</button>
+                <button id="PatrolSubmit" class="elementStyle fontSize23 backgroundGrey borderRad width50 margin5 selfCenter pointer">Submit Patroler</button>
             </div>
         </div>
     </div>
     <div id="editorbutton" class="flex flexRow alignCenter margin5 hidden">
-        <button id="stateBack" class="elementStyle backgroundGrey borderRad width240 margin5 hidden pointer">Back</button>
-        <button id="save" class="elementStyle backgroundGrey borderRad width240 margin5 pointer"></button>
+        <button id="stateBack" class="elementStyle fontSize23 backgroundGrey borderRad width240 margin5 hidden pointer">Back</button>
+        <button id="save" class="elementStyle fontSize23 backgroundGrey borderRad width240 margin5 pointer"></button>
         <pre id="jsonOutput" class="flex backgroundLightgrey widthCalc50 maxHeight350 absolut zindex5 scrollable hidden"></pre>
-        <button id="jsonGenerate" class="elementStyle backgroundGrey borderRad width240 margin5 hidden pointer"></button>
-        <button id="jsonCopy" class="elementStyle backgroundGrey borderRad width240 margin5 hidden pointer">Copy JSON</button>
+        <button id="jsonGenerate" class="elementStyle fontSize23 backgroundGrey borderRad width240 margin5 hidden pointer"></button>
+        <button id="jsonCopy" class="elementStyle fontSize23 backgroundGrey borderRad width240 margin5 hidden pointer">Copy JSON</button>
     </div>
 </div>

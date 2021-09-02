@@ -80,7 +80,13 @@ resources/assets/ziel_open.svg
 resources/background/background.png
 resources/level.json
 resources/level/level1.json
+resources/level/level10.json
 resources/level/level2.json
 resources/level/level3.json
 resources/level/level4.json
+resources/level/level5.json
+resources/level/level6.json
+resources/level/level7.json
+resources/level/level8.json
+resources/level/level9.json
 styles.css

@@ -228,7 +228,6 @@ html, body {
 
 #pauseMenu button {
     width: 95% !important;
-    min-width: 240px;
 }
 
 .viewblock {
@@ -293,17 +292,15 @@ html, body {
     }
 }
 
-.finished {
+.popupMenu {
     display: flex;
     z-index: 6;
     background-color: white;
     align-items: center;
-    margin: auto;
+    margin: 5px;
     flex-direction: column;
     flex-wrap: wrap;
     position: absolute;
-    padding: 5px;
-    gap: 10px;
     min-width: 250px;
     max-width: 50%;
 }
@@ -313,12 +310,10 @@ html, body {
     z-index: 6;
     background-color: white;
     align-items: center;
-    margin: auto;
+    margin: 5px;
     flex-direction: column;
     flex-wrap: wrap;
     position: absolute;
-    padding: 5px;
-    gap: 10px;
 }
 
 .overlay {

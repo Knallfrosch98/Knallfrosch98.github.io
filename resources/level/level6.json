@@ -1,505 +1,336 @@
 {
-  "Level": [
-    [
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall"
-    ],
-    [
-      "Wall",
-      "Path",
-      "Path",
-      "Check",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Goal",
-      "Wall"
-    ],
-    [
-      "Wall",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Wall"
-    ],
-    [
-      "Wall",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall"
-    ],
-    [
-      "Wall",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Wall"
-    ],
-    [
-      "Wall",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Wall"
-    ],
-    [
-      "Wall",
-      "Path",
-      "Path",
-      "Path",
-      "Wall",
-      "LF-tb",
-      "Wall",
-      "Wall",
-      "LF-tb",
-      "Wall",
-      "LF-tb",
-      "Wall",
-      "LF-tb",
-      "Wall",
-      "Path",
-      "Path",
-      "Path",
-      "Wall"
-    ],
-    [
-      "Wall",
-      "Path",
-      "Path",
-      "Path",
-      "Wall",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Wall"
-    ],
-    [
-      "Wall",
-      "Path",
-      "Path",
-      "Path",
-      "Wall",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Wall"
-    ],
-    [
-      "Wall",
-      "Path",
-      "Path",
-      "Path",
-      "Wall",
-      "Wall",
-      "Wall",
-      "LF-tb",
-      "Wall",
-      "LF-tb",
-      "Wall",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Wall"
-    ],
-    [
-      "Wall",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Wall",
-      "Wall",
-      "Path",
-      "Path",
-      "Check",
-      "Path",
-      "Wall"
-    ],
-    [
-      "Wall",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Wall",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Wall"
-    ],
-    [
-      "Airvent-r",
-      "Air-r-1.5",
-      "Air-r-1.5",
-      "Air-r-1.5",
-      "Air-r-1.5",
-      "Air-r-1.5",
-      "Air-r-1.5",
-      "Air-r-1.5",
-      "Abyss",
-      "Abyss",
-      "Abyss",
-      "Path",
-      "Path",
-      "LF-br",
-      "Path",
-      "Path",
-      "Path",
-      "Wall"
-    ],
-    [
-      "Wall",
-      "Wall",
-      "Wall",
-      "LF-tb",
-      "Wall",
-      "Wall",
-      "LF-tb",
-      "Wall",
-      "Wall",
-      "Abyss",
-      "Abyss",
-      "Path",
-      "Wall",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Wall"
-    ],
-    [
-      "Wall",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Wall",
-      "Abyss",
-      "Abyss",
-      "LF-br",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Wall"
-    ],
-    [
-      "Wall",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Wall",
-      "LF-br",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Wall"
-    ],
-    [
-      "Wall",
-      "Path",
-      "Start",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Path",
-      "Wall"
-    ],
-    [
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall",
-      "Wall"
-    ]
-  ],
-  "Collectibles": {
-    "Speed": [
-      {
-        "x": 13.4,
-        "y": 15.4,
-        "duration": 3000,
-        "multiplier": 2
-      },
-      {
-        "x": 10,
-        "y": 4.7,
-        "duration": 3000,
-        "multiplier": 0.9
-      }
-    ],
-    "Key": [
-      {
-        "x": 11.8,
-        "y": 12.6
-      }
-    ],
-    "Life": [
-      {
-        "x": 6.3,
-        "y": 8
-      },
-      {
-        "x": 4.9,
-        "y": 16
-      }
-    ],
-    "Visibility": [
-      {
-        "x": 12,
-        "y": 16.1,
-        "duration": 3000,
-        "difference": -2
-      },
-      {
-        "x": 4.8,
-        "y": 2.8,
-        "duration": 3000,
-        "difference": -2
-      }
-    ],
-    "Invert": [
-      {
-        "x": 14.1,
-        "y": 5,
-        "duration": 5000
-      }
-    ]
-  },
-  "Traps": {
-    "Lasergate": [
-      {
-        "x": 10.8,
-        "y": 11.9,
-        "endx": 10.8,
-        "endy": 10.9,
-        "on": 5000,
-        "off": 3500
-      }
-    ]
-  },
-  "Monster": {
-    "Patroler": [
+  "Level":[
       [
-        {
-          "x": 16,
-          "y": 2.1
-        },
-        {
-          "x": 7,
-          "y": 1.5
-        },
-        {
-          "x": 6.5,
-          "y": 4.1
-        },
-        {
-          "x": 2.4,
-          "y": 5
-        },
-        {
-          "x": 2.8,
-          "y": 10.2
-        },
-        {
-          "x": 6.1,
-          "y": 11
-        },
-        {
-          "x": 9.1,
-          "y": 11.1
-        },
-        {
-          "x": 7.7,
-          "y": 16
-        },
-        {
-          "x": 4.5,
-          "y": 15.2
-        },
-        {
-          "x": 16.3,
-          "y": 16.5
-        },
-        {
-          "x": 15.5,
-          "y": 13.5
-        },
-        {
-          "x": 14,
-          "y": 8.8
-        }
-      ]
-    ],
-    "Runner": [
-      [
-        {
-          "x": 7.1,
-          "y": 1.5
-        },
-        {
-          "x": 12.8,
-          "y": 1.5
-        }
+          "Wall",
+          "Wall",
+          "Wall",
+          "Wall",
+          "Path",
+          "Wall",
+          "Path",
+          "Wall",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Path"
       ],
       [
-        {
-          "x": 10.7,
-          "y": 8.5
-        },
-        {
-          "x": 13.7,
-          "y": 7.7
-        }
+          "Wall",
+          "Path",
+          "Path",
+          "Path",
+          "Wall",
+          "Path",
+          "Wall",
+          "Wall",
+          "Path",
+          "Wall",
+          "Wall",
+          "Abyss",
+          "Wall",
+          "Wall",
+          "Path"
+      ],
+      [
+          "Wall",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Wall",
+          "Path"
+      ],
+      [
+          "Wall",
+          "Path",
+          "Wall",
+          "Path",
+          "Wall",
+          "Start",
+          "Wall",
+          "Path",
+          "Path",
+          "Path",
+          "Wall",
+          "Path",
+          "Wall",
+          "Path",
+          "Path"
+      ],
+      [
+          "Wall",
+          "Path",
+          "Abyss",
+          "Path",
+          "Wall",
+          "LF-b",
+          "Wall",
+          "Path",
+          "Wall",
+          "Path",
+          "Wall",
+          "Path",
+          "Wall",
+          "Path",
+          "Path"
+      ],
+      [
+          "Wall",
+          "Path",
+          "Abyss",
+          "Path",
+          "Path",
+          "Path",
+          "Wall",
+          "Path",
+          "Wall",
+          "Path",
+          "Wall",
+          "Path",
+          "Wall",
+          "Path",
+          "Path"
+      ],
+      [
+          "Wall",
+          "Path",
+          "Abyss",
+          "Path",
+          "LF-r",
+          "Path",
+          "Wall",
+          "Path",
+          "Path",
+          "Path",
+          "Wall",
+          "Wall",
+          "Wall",
+          "Path",
+          "Path"
+      ],
+      [
+          "Wall",
+          "Path",
+          "Abyss",
+          "Path",
+          "LF-r",
+          "Path",
+          "Wall",
+          "Wall",
+          "Wall",
+          "Wall",
+          "Wall",
+          "Abyss",
+          "Path",
+          "Check",
+          "Path"
+      ],
+      [
+          "Wall",
+          "Path",
+          "Abyss",
+          "Air-l-0.5",
+          "Air-l-0.5",
+          "Air-l-0.5",
+          "Airvent-l",
+          "Path",
+          "Path",
+          "Abyss",
+          "Goal",
+          "Path",
+          "Abyss",
+          "Wall",
+          "Path"
+      ],
+      [
+          "LF-r",
+          "Path",
+          "Wall",
+          "Path",
+          "Path",
+          "Path",
+          "Wall",
+          "Path",
+          "Wall",
+          "Wall",
+          "Wall",
+          "Path",
+          "Path",
+          "Wall",
+          "Path"
+      ],
+      [
+          "Wall",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Wall",
+          "Path",
+          "Path",
+          "Path",
+          "Wall",
+          "Path"
+      ],
+      [
+          "Wall",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "LF-blrt",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Wall",
+          "Path"
+      ],
+      [
+          "Wall",
+          "Path",
+          "Wall",
+          "Wall",
+          "Path",
+          "Wall",
+          "Path",
+          "Path",
+          "Path",
+          "Path",
+          "Wall",
+          "Path",
+          "Path",
+          "Wall",
+          "Path"
+      ],
+      [
+          "Wall",
+          "Path",
+          "Wall",
+          "Wall",
+          "Path",
+          "Wall",
+          "Wall",
+          "Wall",
+          "Wall",
+          "Path",
+          "Wall",
+          "LF-t",
+          "LF-t",
+          "Wall",
+          "Path"
+      ],
+      [
+          "Airvent-r",
+          "Air-r-0.5",
+          "Air-r-0.5",
+          "Air-r-0.5",
+          "Air-r-0.5",
+          "Air-r-0.5",
+          "Air-r-0.5",
+          "Air-r-0.5",
+          "Air-r-0.5",
+          "Air-r-0.5",
+          "Air-r-0.5",
+          "Air-r-0.5",
+          "Air-r-0.5",
+          "Air-r-0.5",
+          "Air-r-0.5"
       ]
-    ]
+  ],
+  "Collectibles":{
+      "Key":[
+          {
+              "x":12.4,
+              "y":7.5
+          }
+      ],
+      "Speed":[
+          {
+              "x":4.5,
+              "y":5.5,
+              "duration":3000,
+              "multiplier":5
+          }
+      ],
+      "Life":[
+          {
+              "x":12.4,
+              "y":2.4
+          }
+      ],
+      "Invert":[
+          {
+              "x":4.5,
+              "y":12.4,
+              "duration":3000
+          }
+      ],
+      "Visibility":[
+          {
+              "x":10.3,
+              "y":11.5,
+              "duration":5000,
+              "difference":-1
+          }
+      ]
+  },
+  "Traps":{
+  },
+  "Monster":{
+      "Patroler":[
+          [
+              {
+                  "x":5.4,
+                  "y":2.5
+              },
+              {
+                  "x":3.6,
+                  "y":2.5
+              },
+              {
+                  "x":1.4,
+                  "y":2.7
+              },
+              {
+                  "x":1.3,
+                  "y":9.5
+              },
+              {
+                  "x":5.4,
+                  "y":5.5
+              }
+          ]
+      ],
+      "Runner":[
+          [
+              {
+                  "x":1.3,
+                  "y":11.5
+              },
+              {
+                  "x":5.4,
+                  "y":9.8
+              }
+          ]
+      ]
   }
 }
